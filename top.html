@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="mencloths.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+<body>
+    <header>
+        <div class="bg-change"></div>
+        <div class="logo">
+            <a href="/index.html"><img src="/New folder/myntra.svg" alt="" srcset=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="menu-link"><a href="/index.html">MEN</a>
+                    <div class="drop-down">
+                        <nav class="content-box">
+                            <ul class="content-item1">
+                                <li class="content content-color"><a href="">Top Wear</a></li>
+                                <li class="content"><a href="">T-Shirts</a></li>
+                                <li class="content"><a href="">Casual Shirts</a></li>
+                                <li class="content"><a href="">Formal Shirts</a></li>
+                                <li class="content"><a href="">Sweatshirts</a></li>
+                                <li class="content"><a href="">Jackets</a></li>
+                                <li class="content"><a href="">Blazers & Coats</a></li>
+                                <li class="content"><a href="">Sweaters</a></li>
+                                <li class="content"><a href="">Suits</a></li>
+                                <li class="content"><a href="">Rain Coats</a></li>
+
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item2">
+                                <li class="content content-color"><a href="">Indian & Festive war</a></li>
+                                <li class="content"><a href="">Kurtas & Kurta Sets</a></li>
+                                <li class="content"><a href="">Sherwanis</a></li>
+                                <li class="content"><a href="">Nehru Jackets</a></li>
+                                <li class="content"><a href="">Dhotis</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="content-box">
+                            <ul class="content-item3">
+                                <li class="content content-color"><a href="">Bottomwear</a></li>
+                                <li class="content"><a href="">Jeans</a></li>
+                                <li class="content"><a href="">Casual Trousers</a></li>
+                                <li class="content"><a href="">Formal Trousers</a></li>
+                                <li class="content"><a href="">Shorts</a></li>
+                                <li class="content"><a href="">Track Pants & Joggers</a></li>
+                                <li class="content"><a href="">Blazers & Coats</a></li>
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item4">
+                                <li class="content content-color"><a href="">Innerwear & Sleepwear</a></li>
+                                <li class="content"><a href="">Briefs & Trunks</a></li>
+                                <li class="content"><a href="">Boxers</a></li>
+                                <li class="content"><a href="">Vests</a></li>
+                                <li class="content"><a href="">Sleepwear & Loungewear</a></li>
+                                <li class="content"><a href="">Thermals</a></li>
+                                <li class="content content-color"><a href="">Plus Size</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="content-box">
+                            <ul class="content-item5">
+                                <li class="content content-color"><a href="">Footwear</a></li>
+                                <li class="content"><a href="">Casual Shoes</a></li>
+                                <li class="content"><a href="">Sports Shoes</a></li>
+                                <li class="content"><a href="">Formal Shoes</a></li>
+                                <li class="content"><a href="">Sneakers</a></li>
+                                <li class="content"><a href="">Sandals & Floaters</a></li>
+                                <li class="content"><a href="">Flip Flops</a></li>
+                                <li class="content"><a href="">Socks</a></li>
+
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item6">
+                                <li class="content content-color"><a href="">Personal Care & Grooming</a></li>
+                                <li class="content content-color"><a href="">Sunglasses & Frames</a></li>
+                                <li class="content content-color"><a href="">Watches</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="content-box">
+                            <ul class="content-item1">
+                                <li class="content content-color"><a href="">Sports & Active Wear</a></li>
+                                <li class="content"><a href="">Sports Shoes</a></li>
+                                <li class="content"><a href="">Sports Sandals</a></li>
+                                <li class="content"><a href="">Active T-Shirts</a></li>
+                                <li class="content"><a href="">Track Pants & Shorts</a></li>
+                                <li class="content"><a href="">Tracksuits</a></li>
+                                <li class="content"><a href=""> Jackets & Sweatshirts</a></li>
+                                <li class="content"><a href="">Sports Accessories</a></li>
+                                <li class="content"><a href="">Swimwear</a></li>
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item2">
+                                <li class="content content-color"><a href="">Gadgets</a></li>
+                                <li class="content"><a href="">Smart Wearables</a></li>
+                                <li class="content"><a href="">Fitness Gadgets</a></li>
+                                <li class="content"><a href="">Headphones</a></li>
+                                <li class="content"><a href="">Speakers</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="content-box">
+                            <ul class="content-item7">
+                                <li class="content content-color"><a href="">Fashion Accessories
+                                    </a></li>
+                                <li class="content"><a href="">Wallets</a></li>
+                                <li class="content"><a href="">Belts</a></li>
+                                <li class="content"><a href="">Perfumes & Body Mists</a></li>
+                                <li class="content"><a href="">Trimmers</a></li>
+                                <li class="content"><a href="">Deodorants</a></li>
+                                <li class="content"><a href="">Ties, Cufflinks & Pocket Squares</a></li>
+                                <li class="content"><a href="">Accessory Gift Sets</a></li>
+                                <li class="content"><a href="">Caps & Hats</a></li>
+                                <li class="content"><a href="">Mufflers, Scarves & Gloves</a></li>
+                                <li class="content"><a href="">Phone Cases</a></li>
+                                <li class="content"><a href="">Rings & Wristwear
+                                    </a></li>
+                                <li class="content"><a href="">Helmets</a></li>
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item8">
+                                <li class="content content-color"><a href="">Bags & Backpacks</a></li>
+                                <li class="content content-color"><a href="">Luggages & Trolleys</a></li>
+                            </ul>
+                        </nav>
+
+
+                    </div>
+
+                </li>
+                <li class="menu-link"><a href="">WOMEN</a>
+                </li>
+                <li class="menu-link"><a href="">KIDS</a></li>
+                <li class="menu-link"><a href="">HOME & LIVING</a></li>
+                <li class="menu-link"><a href="">BEAUTY</a></li>
+                <li class="menu-link"><a href="">STUDIO <sup class="New">NEW</sup> </a></li>
+            </ul>
+            <div class="search-box">
+                <a href=""><ion-icon name="search-outline" class="search"></ion-icon></a>
+                <input type="text" placeholder="Search for Product, brands and more" class="search-bar">
+            </div>
+        </nav>
+        <div class="menu-icons">
+            <div class="action-box1"><ion-icon name="person-outline" class="action-icon"></ion-icon>
+                <p>Profile</p>
+                <div class="profile-dropdown">
+                    <div class="p1">
+                        <h4>Welcome</h4>
+                        <p>To access account and manage orders</p>
+                        <button class="login-signup">Login / SignUp</button>
+                    </div>
+                    <div class="p">
+                        <ul class="profile-listing">
+                            <li class="profile-item"><a href="">Orders</a></li>
+                            <li class="profile-item"><a href="">Whishlist</a></li>
+                            <li class="profile-item"><a href="">Gift Cards</a></li>
+                            <li class="profile-item"><a href="">Contact Us</a></li>
+                            <li class="profile-item"><a href="">Myntra Insider</a></li>
+                        </ul>
+                    </div>
+                    <div class="p">
+                        <ul class="profile-listing">
+                            <li class="profile-item"><a href="">Orders</a></li>
+                            <li class="profile-item"><a href="">Whishlist</a></li>
+                            <li class="profile-item"><a href="">Gift Cards</a></li>
+                            <li class="profile-item"><a href="">Contact Us</a></li>
+                            <li class="profile-item"><a href="">Myntra Insider</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="action-box"> <ion-icon name="heart-outline" class="action-icon"></ion-icon>
+                <p>Whishlist</p>
+            </div>
+            <div class="action-box"> <ion-icon name="bag-handle-outline" class="action-icon"></ion-icon>
+                <p>Bag</p>
+            </div>
+        </div>
+        <!-- <div class="background-lighter"> -->
+        </div>
+    </header>
+    <main>
+
+   
+<div class="feature-container">
+    <div class="filter"><h2 style="font-size: 1.2vw;">FILTERS</h2></div>
+    <div class="filter-box">
+        <!-- <div class="dropdown-listing"></div> -->
+        <nav>
+            <ul class="feature-item">
+                <li class="feature-list"><a href="">Bundles</a>
+                <div class="arrow-box">
+                    <ion-icon name="chevron-down-outline" class="arrow-icon"></ion-icon>
+                </div>
+                </li>
+                <li class="feature-list"><a href="">Country of Origin</a><div class="arrow-box">
+                    <ion-icon name="chevron-down-outline" class="arrow-icon "></ion-icon>
+    
+                </div></li>
+                <li class="feature-list"><a href="">Size</a><div class="arrow-box">
+                    <ion-icon name="chevron-down-outline" class="arrow-icon "></ion-icon>
+                </div></li>
+            </ul>
+        </nav>
+        <div class="accordion">
+            <div class="title-text">
+                <p>Sort by :</p>
+               <h3 class="changing-txt">Recommended</h3>
+                <ion-icon name="caret-up" class="list-arrow-icon"></ion-icon>
+            </div>
+            <div class="accordion-content accordion-active ">
+                <ul>
+                    <li><a href="">Recommended</a></li>
+                    <li><a href="">What's New</a></li>
+                    <li><a href="">Popularity</a></li>
+                    <li><a href="">Better Discount</a></li>
+                    <li><a href="">Price:High to Low</a></li>
+                    <li><a href="">Price:Low to High</a></li>
+                    <li><a href="">Customer Ratings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<div class="product">
+    <div class="product-listing">
+        <div class="product-item"></div>
+        <div class="product-container">
+            <div class="product-box">
+                <div class="info-box"></div>
+            </div>
+        </div>
+    </div>
+   
+</div>
+</main>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            centeredSlides: true,
+            freeMode: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

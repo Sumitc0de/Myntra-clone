@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #FFFFFF;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 30vw;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #b90000; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+    }
+</style>
+
+<body>
+    <header>
+        <div class="bg-change"></div>
+        <div class="logo">
+            <a href=""><img src="/New folder/myntra.svg" alt="" srcset=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="menu-link"><a href="">MEN</a>
+                    <div class="drop-down">
+                        <nav class="content-box">
+                            <ul class="content-item1">
+                                <li class="content content-color"><a href="/top.html">Top Wear</a></li>
+                                <li class="content"><a href="">T-Shirts</a></li>
+                                <li class="content"><a href="">Casual Shirts</a></li>
+                                <li class="content"><a href="">Formal Shirts</a></li>
+                                <li class="content"><a href="">Sweatshirts</a></li>
+                                <li class="content"><a href="">Jackets</a></li>
+                                <li class="content"><a href="">Blazers & Coats</a></li>
+                                <li class="content"><a href="">Sweaters</a></li>
+                                <li class="content"><a href="">Suits</a></li>
+                                <li class="content"><a href="">Rain Coats</a></li>
+
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item2">
+                                <li class="content content-color"><a href="">Indian & Festive war</a></li>
+                                <li class="content"><a href="">Kurtas & Kurta Sets</a></li>
+                                <li class="content"><a href="">Sherwanis</a></li>
+                                <li class="content"><a href="">Nehru Jackets</a></li>
+                                <li class="content"><a href="">Dhotis</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="content-box">
+                            <ul class="content-item3">
+                                <li class="content content-color"><a href="">Bottomwear</a></li>
+                                <li class="content"><a href="">Jeans</a></li>
+                                <li class="content"><a href="">Casual Trousers</a></li>
+                                <li class="content"><a href="">Formal Trousers</a></li>
+                                <li class="content"><a href="">Shorts</a></li>
+                                <li class="content"><a href="">Track Pants & Joggers</a></li>
+                                <li class="content"><a href="">Blazers & Coats</a></li>
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item4">
+                                <li class="content content-color"><a href="">Innerwear & Sleepwear</a></li>
+                                <li class="content"><a href="">Briefs & Trunks</a></li>
+                                <li class="content"><a href="">Boxers</a></li>
+                                <li class="content"><a href="">Vests</a></li>
+                                <li class="content"><a href="">Sleepwear & Loungewear</a></li>
+                                <li class="content"><a href="">Thermals</a></li>
+                                <li class="content content-color"><a href="">Plus Size</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="content-box">
+                            <ul class="content-item5">
+                                <li class="content content-color"><a href="">Footwear</a></li>
+                                <li class="content"><a href="">Casual Shoes</a></li>
+                                <li class="content"><a href="">Sports Shoes</a></li>
+                                <li class="content"><a href="">Formal Shoes</a></li>
+                                <li class="content"><a href="">Sneakers</a></li>
+                                <li class="content"><a href="">Sandals & Floaters</a></li>
+                                <li class="content"><a href="">Flip Flops</a></li>
+                                <li class="content"><a href="">Socks</a></li>
+
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item6">
+                                <li class="content content-color"><a href="">Personal Care & Grooming</a></li>
+                                <li class="content content-color"><a href="">Sunglasses & Frames</a></li>
+                                <li class="content content-color"><a href="">Watches</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="content-box">
+                            <ul class="content-item1">
+                                <li class="content content-color"><a href="">Sports & Active Wear</a></li>
+                                <li class="content"><a href="">Sports Shoes</a></li>
+                                <li class="content"><a href="">Sports Sandals</a></li>
+                                <li class="content"><a href="">Active T-Shirts</a></li>
+                                <li class="content"><a href="">Track Pants & Shorts</a></li>
+                                <li class="content"><a href="">Tracksuits</a></li>
+                                <li class="content"><a href=""> Jackets & Sweatshirts</a></li>
+                                <li class="content"><a href="">Sports Accessories</a></li>
+                                <li class="content"><a href="">Swimwear</a></li>
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item2">
+                                <li class="content content-color"><a href="">Gadgets</a></li>
+                                <li class="content"><a href="">Smart Wearables</a></li>
+                                <li class="content"><a href="">Fitness Gadgets</a></li>
+                                <li class="content"><a href="">Headphones</a></li>
+                                <li class="content"><a href="">Speakers</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="content-box">
+                            <ul class="content-item7">
+                                <li class="content content-color"><a href="">Fashion Accessories
+                                    </a></li>
+                                <li class="content"><a href="">Wallets</a></li>
+                                <li class="content"><a href="">Belts</a></li>
+                                <li class="content"><a href="">Perfumes & Body Mists</a></li>
+                                <li class="content"><a href="">Trimmers</a></li>
+                                <li class="content"><a href="">Deodorants</a></li>
+                                <li class="content"><a href="">Ties, Cufflinks & Pocket Squares</a></li>
+                                <li class="content"><a href="">Accessory Gift Sets</a></li>
+                                <li class="content"><a href="">Caps & Hats</a></li>
+                                <li class="content"><a href="">Mufflers, Scarves & Gloves</a></li>
+                                <li class="content"><a href="">Phone Cases</a></li>
+                                <li class="content"><a href="">Rings & Wristwear
+                                    </a></li>
+                                <li class="content"><a href="">Helmets</a></li>
+                            </ul>
+                            <hr class="content-line">
+                            <ul class="content-item8">
+                                <li class="content content-color"><a href="">Bags & Backpacks</a></li>
+                                <li class="content content-color"><a href="">Luggages & Trolleys</a></li>
+                            </ul>
+                        </nav>
+
+
+                    </div>
+
+                </li>
+                <li class="menu-link"><a href="">WOMEN</a>
+                </li>
+                <li class="menu-link"><a href="">KIDS</a></li>
+                <li class="menu-link"><a href="">HOME & LIVING</a></li>
+                <li class="menu-link"><a href="">BEAUTY</a></li>
+                <li class="menu-link"><a href="">STUDIO <sup class="New">NEW</sup> </a></li>
+            </ul>
+            <div class="search-box">
+                <a href=""><ion-icon name="search-outline" class="search"></ion-icon></a>
+                <input type="text" placeholder="Search for Product, brands and more" class="search-bar">
+            </div>
+        </nav>
+        <div class="menu-icons">
+            <div class="action-box1"><ion-icon name="person-outline" class="action-icon"></ion-icon>
+                <p>Profile</p>
+                <div class="profile-dropdown">
+                    <div class="p1">
+                        <h4>Welcome</h4>
+                        <p>To access account and manage orders</p>
+                        <button class="login-signup">Login / SignUp</button>
+                    </div>
+                    <div class="p">
+                        <ul class="profile-listing">
+                            <li class="profile-item"><a href="">Orders</a></li>
+                            <li class="profile-item"><a href="">Whishlist</a></li>
+                            <li class="profile-item"><a href="">Gift Cards</a></li>
+                            <li class="profile-item"><a href="">Contact Us</a></li>
+                            <li class="profile-item"><a href="">Myntra Insider</a></li>
+                        </ul>
+                    </div>
+                    <div class="p">
+                        <ul class="profile-listing">
+                            <li class="profile-item"><a href="">Orders</a></li>
+                            <li class="profile-item"><a href="">Whishlist</a></li>
+                            <li class="profile-item"><a href="">Gift Cards</a></li>
+                            <li class="profile-item"><a href="">Contact Us</a></li>
+                            <li class="profile-item"><a href="">Myntra Insider</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="action-box"> <ion-icon name="heart-outline" class="action-icon"></ion-icon>
+                <p>Whishlist</p>
+            </div>
+            <div class="action-box"> <ion-icon name="bag-handle-outline" class="action-icon"></ion-icon>
+                <p>Bag</p>
+            </div>
+        </div>
+        <!-- <div class="background-lighter"> -->
+        </div>
+    </header>
+ <div class="offer-container">
+        <div class="offer"><img
+                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/12/e662f652-6912-43c1-b351-1025424b4d691723403065035-FLAT-300-Off-on-1st-Purchase-Strip-----1.jpg"
+                alt=""></div>
+        <div class="offer offer2"><img
+                src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/11/b143bacb-7b65-4c3e-a7ef-550c24bcc0541723386309703-DESKTOP-HP-BANNER_01.jpg"
+                alt="">
+            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/11/8a9c6ffc-5e7e-4c5d-9aea-1c53f86dd6c41723386309669-DESKTOP-HP-BANNER_02.gif"
+                alt="">
+        </div>
+        <div class="offer offer3"><img
+                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/4381b000-d810-4926-bfd5-9287bf513b601723102318859-COUPONS-CORNER.jpg"
+                alt=""></div>
+        <div class="offer offer4"><img
+                src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/781c7485-0eef-498c-a5b2-e516d1a6d07a1723102442579-MYNTRA100.jpg"
+                alt="">
+            <img src="https://assets.myntassets.com/w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/7f1a4447-7935-4df0-b9e7-da0d5c40af771723102442550-MYNTRA200.jpg"
+                alt="">
+        </div>
+        <div class="offer offer3"><img
+                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/e470e611-360f-40be-813d-77a9b8075e191723102318894-Opening-Hour-Offers.jpg"
+                alt=""></div>
+        <div class="offer offer3"><img
+                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/11/b1919a73-f3dc-4251-a676-4c89b5415fe11723383576419-12am-10am_Desktop.jpg"
+                alt=""></div>
+        <div class="offer offer3"><img
+                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/cc953652-7cd8-4a25-a088-55a7a27d51781723102318791-Crazy-Deals.jpg"
+                alt=""></div>
+
+    </div> 
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/afcd1f2c-efba-4c21-93ed-78fcdd33b1f61722921856779-Card28.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/fa5d8e19-d7ea-4995-96c8-a60ddd1499461722921856740-Card29.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/b254aaa2-ba7e-4c7c-bf6d-9b9c0a681b2c1722921857980-Card32.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/9271409e-6e19-4a64-8bd8-be6fbd05b56f1722921857498-Card33.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/c2de2258-5120-486c-84a5-8896f862237a1722921858053-Card45.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/bdfd7c83-ba9e-4dac-a56f-4f8a95102d2a1722921857032-Card46.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/04507013-5807-43ff-81b5-513d721bd2dc1722925816078-Card31.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/956f5df5-7b1a-4a59-9c5e-1de4499cbd331722925815867-Card32.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/46e49017-c7fa-4c9b-99f9-87cb05b137a41722925815519-Card33.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/754c446c-5605-4943-bd4b-4d944de132421722925815203-Card58.png"
+                        alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img
+                        src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/6/afbc4fe1-73fa-4aa3-8991-fce24d37775f1722921857849-Card1.png"
+                        alt=""></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+     <div class="offer-container">
+        <div class="offer3"><img
+                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/6bd9a455-0dbe-4c41-b2b8-7046e2069fe51723102318825-Categories-To-Cart.jpg"
+                alt=""></div>
+    </div>
+     <div class="myx-indexContainer offer3">
+        <div class="container-base myx-stretch    " style="    height: 20vw;">
+            <div>
+                <div class="container-container ">
+                    <div class=" row-base" style="display: -webkit-flex;">
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div>
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/fusion-wear?rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0&amp;sort=popularity">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/df8bb393-b7a5-451f-afec-8b9e340bd1601723097513962-img_02.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/df8bb393-b7a5-451f-afec-8b9e340bd1601723097513962-img_02.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/men-casual-wear?plaEnabled=false&amp;rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/5d52f586-1d94-4d8f-858d-70cf39c476731723097513978-img_03.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/5d52f586-1d94-4d8f-858d-70cf39c476731723097513978-img_03.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/sports-wear?f=Gender%3Amen%2Cmen%20women&amp;rawQuery=sports%20wear&amp;rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/739637ce-7e75-465a-aca2-39fe87b65aca1723097513989-img_04.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/739637ce-7e75-465a-aca2-39fe87b65aca1723097513989-img_04.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/wsa-all-new?rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/edcfffbd-0943-4353-b29e-386431a91f3e1723097514001-img_05.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/edcfffbd-0943-4353-b29e-386431a91f3e1723097514001-img_05.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/womens-western-wear?rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/d1e30422-b0d6-4e74-bddf-a75da92dcc5c1723097514016-img_06.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/d1e30422-b0d6-4e74-bddf-a75da92dcc5c1723097514016-img_06.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/sport-apparel-?rawQuery=sport%20apparel%20">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/08277823-1262-4d63-a119-98e206c5e1341723097514027-img_07.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/08277823-1262-4d63-a119-98e206c5e1341723097514027-img_07.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="myx-indexContainer offer3">
+        <div class="container-base myx-stretch    " style="    height: 20vw;">
+            <div>
+                <div class="container-container ">
+                    <div class=" row-base" style="display: -webkit-flex;">
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/loungewear?plaEnabled=false&amp;rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/770fe22d-363a-422c-8ce5-f2966a4a12f51723097514037-img_08.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/770fe22d-363a-422c-8ce5-f2966a4a12f51723097514037-img_08.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/men-innerwear?rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/ffe158fc-9298-45ae-a5cf-9963ce4ff9e91723097514048-img_09.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/ffe158fc-9298-45ae-a5cf-9963ce4ff9e91723097514048-img_09.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/lingerie?rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/0b9f3350-d92a-4a22-a3f9-cb50818299071723097514060-img_10.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/0b9f3350-d92a-4a22-a3f9-cb50818299071723097514060-img_10.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/watches?rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/19e525e3-8d34-4f9a-acc4-0c99ed72015d1723097514071-img_11.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/19e525e3-8d34-4f9a-acc4-0c99ed72015d1723097514071-img_11.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/beauty-page-appliances?rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/3b1edb33-70cb-4aa7-afd2-b851f9d31c9e1723097514082-img_12.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/3b1edb33-70cb-4aa7-afd2-b851f9d31c9e1723097514082-img_12.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/grooming?f=Brand%3ABeardhood%2CBombay%20Shaving%20Company%2CFoolzy%2CTHE%20MAN%20COMPANY%2CUstraa&amp;rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/d2aea926-fc2e-49a4-a440-581b2a2462731723097514093-img_13.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/d2aea926-fc2e-49a4-a440-581b2a2462731723097514093-img_13.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="myx-indexContainer offer3">
+        <div class="container-base myx-stretch    " style="height: 20vw;">
+            <div>
+                <div class="container-container ">
+                    <div class=" row-base" style="display: -webkit-flex;">
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/watches?extra_search_param=isautosuggestentry%3atrue%3a%3aid%3a2297-watches&amp;rawQuery=Watches">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/a831c36e-3c55-4f8e-9bc2-967e4be81f621723097514242-img_26.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/a831c36e-3c55-4f8e-9bc2-967e4be81f621723097514242-img_26.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/loungewear?f=Gender%3Amen%20women%2Cwomen&amp;plaEnabled=false&amp;rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/1f63933b-3bac-4200-9ddf-afc474aeaaee1723097514257-img_27.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/1f63933b-3bac-4200-9ddf-afc474aeaaee1723097514257-img_27.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/eyewear?f=Gender%3Amen%2Cmen%20women&amp;rf=Discount%20Range%3A80.0_100.0_80.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/defeaedb-2487-4d8d-92dd-22269a904a051723097514268-img_28.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/defeaedb-2487-4d8d-92dd-22269a904a051723097514268-img_28.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/work-wear-women?extra_search_param=isautosuggestentry%3atrue%3a%3aid%3a2297-work-wear-women&amp;rawQuery=Work%20Wear%20Women">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/0a5ad715-ac00-4b64-a666-dde0eb81d7de1723097514281-img_29.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/0a5ad715-ac00-4b64-a666-dde0eb81d7de1723097514281-img_29.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/casual-wear-women-dress?extra_search_param=isautosuggestentry%3atrue%3a%3aid%3a2297-casual-wear-women-dress&amp;rawQuery=Casual%20Wear%20Women%20Dress">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/7f0bf96a-72ba-492e-9e34-b6b7e7c69dcc1723097514293-img_30.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/7f0bf96a-72ba-492e-9e34-b6b7e7c69dcc1723097514293-img_30.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 130.62%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/trolley-bags?plaEnabled=false&amp;rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/652964a1-8faf-41f4-a703-3edbc8c9dfd41723097514306-img_31.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/652964a1-8faf-41f4-a703-3edbc8c9dfd41723097514306-img_31.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="myx-indexContainer offer3">
+        <div class="container-base myx-stretch    " style="height: 20vw;">
+            <div>
+                <div class="container-container ">
+                    <div class=" row-base" style="display: -webkit-flex;">
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 108.85%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/bag?rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/707dc345-1365-49a7-a2b8-b4b806f95dcb1723097514318-img_32.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/707dc345-1365-49a7-a2b8-b4b806f95dcb1723097514318-img_32.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 108.85%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/trolley-bags?plaEnabled=false&amp;rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/b7bf0666-e853-4aff-be1c-8f40e2cfcd8b1723097514330-img_33.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/b7bf0666-e853-4aff-be1c-8f40e2cfcd8b1723097514330-img_33.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 108.85%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/flipflops?extra_search_param=isautosuggestentry%3atrue%3a%3aid%3a2297-flipflops">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/6a6eea61-8393-4a41-9c62-0c428009349a1723097514342-img_34.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/6a6eea61-8393-4a41-9c62-0c428009349a1723097514342-img_34.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 108.85%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="https://www.myntra.com/flipflops?extra_search_param=isautosuggestentry%3atrue%3a%3aid%3a2297-flipflops">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/a2689ddb-3148-4209-8fdb-859c919fb0251723097514355-img_35.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined image-hand"
+                                                            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/a2689ddb-3148-4209-8fdb-859c919fb0251723097514355-img_35.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+                            <div class="container-base myx-stretch    ">
+                                <div style="padding-bottom: 108.85%;">
+                                    <div class="container-container container-aspectContainer">
+                                        <div class=" row-base" style="display: -webkit-flex;">
+                                            <div class=" column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;"><a
+                                                    href="">
+                                                    <picture draggable="false" class="img-responsive">
+                                                        <source
+                                                            srcset="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/02f0e388-8b80-4ccc-a025-85b855143a301723097514367-img_36.jpg"
+                                                            type="image/webp"><img draggable="false"
+                                                            class="image-image undefined "
+                                                            src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/8/02f0e388-8b80-4ccc-a025-85b855143a301723097514367-img_36.jpg"
+                                                            srcset="">
+                                                    </picture>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offer-container">
+        <div class="offer3" style="margin-top: 20px;"><img
+                src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/8/10/9f742439-dfa0-4196-a9bd-3a54c357895b1723305065804-App-Install-Banner.jpg"
+                alt=""></div>
+    </div> 
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            centeredSlides: true,
+            freeMode: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
